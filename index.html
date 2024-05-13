@@ -1,64 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Camp'agnon</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Camp'agnon</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
-
-
-
-    <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
 
 
 
-      @media (min-width: 768px) {
-      }
-    </style>
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
 
 
-    <!-- Custom styles -->
-    <link href="carousel.css" rel="stylesheet">
-  </head>
-  <body>
 
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/img/logo.png" alt="Logo Camp'agnon" height="30" class="d-inline-block align-text-top">
-          Camp'agnon
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Galerie</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Recherche</button>
-          </form>
-        </div>
+    @media (min-width: 768px) {
+    }
+  </style>
+
+
+  <!-- Custom styles -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png" alt="Logo Camp'agnon" height="30" class="d-inline-block align-text-top">
+        Camp'agnon
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Galerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Recherche</button>
+        </form>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
 
 
@@ -204,9 +204,8 @@
     </div>
   </div>
 
-
-
   <br><br>
+
   <div class="container">
     <h2 class="display-4 text-center mt-5 mb-4">Rejoignez-nous!</h2>
     <p class="lead text-center">Inscrivez votre enfant dans notre crèche pour lui offrir un début plein de promesses. Contactez-nous dès aujourd'hui pour plus d'informations ou pour organiser une visite.</p>
@@ -216,22 +215,22 @@
   </div>
 </main>
 
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.getElementById('feedbackForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Empêche la soumission normale du formulaire
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche la soumission normale du formulaire
 
-      // Ici, ajoutez votre logique d'envoi des données, par exemple via AJAX.
+    // Ici, ajoutez votre logique d'envoi des données, par exemple via AJAX.
 
-      var myModal = new bootstrap.Modal(document.getElementById('confirmationModal'), {
-        keyboard: false
-      });
-      myModal.show();
-
-      // Vous pouvez réinitialiser le formulaire ici si nécessaire
-      this.reset();
+    var myModal = new bootstrap.Modal(document.getElementById('confirmationModal'), {
+      keyboard: false
     });
-  </script>
+    myModal.show();
 
-  </body>
+    // Vous pouvez réinitialiser le formulaire ici si nécessaire
+    this.reset();
+  });
+</script>
+
+</body>
 </html>
