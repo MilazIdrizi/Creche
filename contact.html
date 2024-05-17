@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contactez Camp'agnon</title>
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 70px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            line-height: 60px; /* Vertically center the text there */
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo Camp'agnon" height="30" class="d-inline-block align-text-top">
+                Camp'agnon
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerie.html">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmationModalLabel">Confirmation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Votre message a été envoyé avec succès. Nous vous contacterons dans les plus brefs délais.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="container">
+    <h1>Contactez-nous</h1>
+    <p class="lead">Vous avez des questions ou vous souhaitez en savoir plus sur nos services ? N'hésitez pas à nous contacter.</p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Formulaire de Contact</h3>
+            <form id="feedbackForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h3>Informations de Contact</h3>
+            <p><strong>Adresse:</strong> 123 Rue Imaginaire, 75003 Paris, France</p>
+            <p><strong>Téléphone:</strong> +33 1 23 45 67 89</p>
+            <p><strong>Email:</strong> contact@campagnon.com</p>
+            <h3>Trouvez-nous sur la carte</h3>
+            <!-- Embedded Google Map -->
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=paris&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container text-center">
+        <span class="text-muted">© 2024 Camp'agnon. Tous droits réservés.</span>
+    </div>
+</footer>
+
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêche la soumission normale du formulaire
+
+        // Ici, ajoutez votre logique d'envoi des données, par exemple via AJAX.
+
+        var myModal = new bootstrap.Modal(document.getElementById('confirmationModal'), {
+            keyboard: false
+        });
+        myModal.show();
+
+        // Vous pouvez réinitialiser le formulaire ici si nécessaire
+        this.reset();
+    });
+</script>
+</body>
+</html>

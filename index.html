@@ -26,6 +26,9 @@
 
   <!-- Custom styles -->
   <link href="carousel.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -42,13 +45,13 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Galerie</a>
+            <a class="nav-link" href="galerie.html">Galerie</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -74,7 +77,7 @@
       <div class="carousel-item active">
         <img src="assets/img/img1.webp" class="d-block w-100" alt="Daycare Classroom">
         <div class="container">
-          <div class="carousel-caption text-start">
+          <div class="carousel-caption text-start" data-aos="fade-right">
             <h1>Bienvenue à la crèche du Camp'agnon!</h1>
             <p>Découvrez un lieu où chaque jour est une aventure et un voyage de découverte. Chez nous, vos petits trésors grandissent et apprennent dans un environnement sécurisé et stimulant, encadrés par des professionnels de la petite enfance passionnés et attentifs.</p>
           </div>
@@ -111,7 +114,7 @@
     </button>
   </div>
 
-  <div class="container mt-5">
+  <div class="container mt-5" data-aos="fade-up">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <h1 class="display-4">Bienvenue à Camp'agnon!</h1>
@@ -128,40 +131,81 @@
     </div>
   </div>
 
+  <hr class="featurette-divider">
 
-  <br><br><br><br><br>
 
 
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container marketing">
+  <div class="container marketing mt-5" data-aos="zoom-in">
+    <!-- Three columns of services -->
     <div class="row">
-      <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" src="assets/img/activities1.webp" width="140" height="140" alt="Creative Arts">
-        <h2>Arts Créatifs</h2>
-        <p>Stimuler la créativité et l'expression artistique à travers des activités manuelles adaptées à chaque âge.</p>
-        <p><a class="btn btn-secondary" href="#">Découvrir &raquo;</a></p>
+      <div class="col-lg-4 mb-4" >
+        <img class="bd-placeholder-img rounded-circle mx-auto d-block" width="140" height="140" src="assets/img/activities1.webp" alt="Creative Arts">
+        <h2 class="mt-3">Arts Créatifs</h2>
+        <p>Stimuler la créativité et l'expression artistique à travers des activités manuelles adaptées à chaque âge, dans un environnement propice à l'éveil des jeunes esprits.</p>
+        <p><a class="btn btn-primary" href="#">Découvrir &raquo;</a></p>
       </div>
-      <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" src="assets/img/activities2.webp" width="140" height="140" alt="Outdoor Fun">
-        <h2>Jeux Extérieurs</h2>
-        <p>Des jeux en plein air pour développer la motricité et encourager le jeu collectif et l'aventure sécurisée.</p>
-        <p><a class="btn btn-secondary" href="#">Explorer &raquo;</a></p>
+      <div class="col-lg-4 mb-4">
+        <img class="bd-placeholder-img rounded-circle mx-auto d-block" width="140" height="140" src="assets/img/activities2.webp" alt="Outdoor Fun">
+        <h2 class="mt-3">Jeux Extérieurs</h2>
+        <p>Encourager le jeu collectif et l'aventure sécurisée à l'extérieur, pour développer la motricité et l'interaction sociale parmi les enfants.</p>
+        <p><a class="btn btn-primary" href="#">Explorer &raquo;</a></p>
       </div>
-      <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" src="assets/img/activities3.webp" width="140" height="140" alt="Story Time">
-        <h2>Histoires et Contes</h2>
-        <p>L'heure du conte pour voyager à travers les mots et les images, stimulant l'imagination et la compréhension.</p>
-        <p><a class="btn btn-secondary" href="#">Écouter &raquo;</a></p>
+      <div class="col-lg-4 mb-4">
+        <img class="bd-placeholder-img rounded-circle mx-auto d-block" width="140" height="140" src="assets/img/activities3.webp" alt="Story Time">
+        <h2 class="mt-3">Histoires et Contes</h2>
+        <p>L'heure du conte pour éveiller l'imagination, enrichir le vocabulaire et stimuler l'amour de la lecture chez les tout-petits.</p>
+        <p><a class="btn btn-primary" href="#">Écouter &raquo;</a></p>
       </div>
     </div>
+
+    <!-- Featurettes for deeper insight -->
+    <hr class="featurette-divider">
+
+    <div class="row featurette" data-aos="fade-right">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Le Partage <span class="text-muted">— Un espace de croissance.</span></h2>
+        <p class="lead">Chaque jouet et chaque moment est une occasion de partager, d'apprendre et de grandir ensemble, renforçant les liens sociaux et la coopération dès le plus jeune âge.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/img/tobogan.webp" alt="Children Sharing">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette" data-aos="fade-left">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">La Confiance <span class="text-muted">— Sécurité et bien-être.</span></h2>
+        <p class="lead">Nous créons un environnement sécurisé où chaque enfant et parent peut se sentir en confiance, favorisant une atmosphère d'apprentissage positive et sécurisante.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/img/confiance.webp" alt="Trust Environment">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette" data-aos="fade-right">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Projet Pédagogique <span class="text-muted">— Inclusivité et diversité.</span></h2>
+        <p class="lead">Notre approche éducative assure que chaque enfant est valorisé, inclus et encouragé à explorer son individualité dans un cadre respectueux et diversifié.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/img/monT.webp" alt="Educational Project">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
   </div>
 
-  <br><br>
+  <!-- /END THE FEATURETTES -->
+
   <!-- Formulaire d'avis -->
-  <div class="container my-5">
+  <div class="container my-5" data-aos="fade-up">
     <div class="row justify-content-center">
       <div class="col-md-8">
         <h2 class="text-center mb-4">Laissez-nous votre avis</h2>
@@ -204,13 +248,14 @@
     </div>
   </div>
 
-  <br><br>
+  <hr class="featurette-divider">
 
-  <div class="container">
+
+  <div class="container" data-aos="fade-up">
     <h2 class="display-4 text-center mt-5 mb-4">Rejoignez-nous!</h2>
     <p class="lead text-center">Inscrivez votre enfant dans notre crèche pour lui offrir un début plein de promesses. Contactez-nous dès aujourd'hui pour plus d'informations ou pour organiser une visite.</p>
     <div class="text-center">
-      <a href="#" class="btn btn-lg btn-primary">Contactez-nous</a>
+      <a href="contact.html" class="btn btn-lg btn-primary">Contactez-nous</a>
     </div>
   </div>
 </main>
@@ -231,6 +276,46 @@
     this.reset();
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
 </body>
+
+<br><br><br><br><br><br><br><br><br>
+
+<footer class="bg-dark text-white pt-4 pb-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="assets/img/logo.png" alt="Logo Camp'agnon" height="50" class="mb-3">
+        <p>Notre crèche offre un environnement éducatif stimulant et sûr, où chaque enfant peut explorer et grandir en toute confiance.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Liens rapides</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-decoration-none text-light">Accueil</a></li>
+          <li><a href="galerie.html" class="text-decoration-none text-light">Galerie</a></li>
+          <li><a href="contact.html" class="text-decoration-none text-light">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contactez-nous</h5>
+        <p>2 Square CLair-Matin, 1213 Petit-Lancy, Suisse</p>
+        <p type="tel" href="+41766161254">Téléphone: +41 76 616 12 54</p>
+        <p type="email" href="mila_z_im@hotmail.com"><a href="mailto"></a>Email: contact@campagnon.com</p>
+        <div>
+          <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <p>&copy; 2024 Camp'agnon. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
 </html>
