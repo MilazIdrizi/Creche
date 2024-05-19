@@ -9,10 +9,6 @@
   <title>Camp'agnon</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
-
-
-
-  <!-- Bootstrap core CSS -->
   <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
@@ -22,9 +18,6 @@
     @media (min-width: 768px) {
     }
   </style>
-
-
-  <!-- Custom styles -->
   <link href="carousel.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -78,7 +71,7 @@
         <img src="assets/img/img1.webp" class="d-block w-100" alt="Daycare Classroom">
         <div class="container">
           <div class="carousel-caption text-start" data-aos="fade-right">
-            <h1>Bienvenue à la crèche du Camp'agnon!</h1>
+            <h1>Bienvenue à la crèche les Camp'agnon!</h1>
             <p>Découvrez un lieu où chaque jour est une aventure et un voyage de découverte. Chez nous, vos petits trésors grandissent et apprennent dans un environnement sécurisé et stimulant, encadrés par des professionnels de la petite enfance passionnés et attentifs.</p>
           </div>
         </div>
@@ -265,14 +258,11 @@
   document.getElementById('feedbackForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Empêche la soumission normale du formulaire
 
-    // Ici, ajoutez votre logique d'envoi des données, par exemple via AJAX.
-
     var myModal = new bootstrap.Modal(document.getElementById('confirmationModal'), {
       keyboard: false
     });
     myModal.show();
 
-    // Vous pouvez réinitialiser le formulaire ici si nécessaire
     this.reset();
   });
 </script>
